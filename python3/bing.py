@@ -16,11 +16,11 @@ path = os.path.split(os.path.realpath(__file__))[0] + os.sep
 # 生成文件名
 def getFileName(type):
     if type == 1:
-        folder = "1080\\"
+        folder = "1080"+os.sep
     elif type == 2:
-        folder = "2k\\"
+        folder = "2k"+os.sep
     else:
-        folder = '4k\\'
+        folder = '4k'+os.sep
 
     today = datetime.datetime.today()
     name = path + folder + str(today.year) + '-' + str(
